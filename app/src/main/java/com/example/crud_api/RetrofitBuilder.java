@@ -30,7 +30,7 @@ public class RetrofitBuilder {
         gsonBuilder.setLenient();
         Gson gson = gsonBuilder.create();
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://radinals2901.github.io/Arsenal/").client(okhttpBuilder.build())
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://niayaya14.github.io/mobile-p14-data/").client(okhttpBuilder.build())
                 .addConverterFactory(GsonConverterFactory.create(gson)).build();
 
         return retrofit;

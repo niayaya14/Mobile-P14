@@ -2,55 +2,67 @@ package com.example.crud_api;
 
 public class PlayerItem {
 
-    String no;
-    String name;
-    String birth_date;
-    String Position;
-    String International;
-    String Team;
-    String Poster;
+    String id;
+    String albumName;
+    String title;
+    String releaseDate;
+    String artistName;
+    String genre;
+    String pictureUrl;
 
-    public String getNo() {
-        return no;
-    }
-    public void setNo(String no) {
-        this.no = no;
+    public String getId() {
+        return id;
     }
 
-    public String getName() {
-        return name;
+    public void setId(String id) {
+        this.id = id;
     }
-    public void setName(String name) {
-        this.name = name;
+
+    public String getAlbumName() {
+        return albumName;
     }
-    public String getBirth_date() {
-        return birth_date;
+
+    public void setAlbumName(String albumName) {
+        this.albumName = albumName;
     }
-    public void setBirth_date(String birth_date) {
-        this.birth_date = birth_date;
+
+    public String getTitle() {
+        return title;
     }
-    public String getPosition() {
-        return Position;
+
+    public void setTitle(String title) {
+        this.title = title;
     }
-    public void setPosition(String position) {
-        Position = position;
+
+    public String getReleaseDate() {
+        return releaseDate;
     }
-    public String getInternational() {
-        return International;
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
     }
-    public void setInternational(String international) {
-        International = international;
+
+    public String getArtistName() {
+        return artistName;
     }
-    public String getTeam() {
-        return Team;
+
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
     }
-    public void setTeam(String team) {
-        Team = team;
+
+    public String getGenre() {
+        return genre;
     }
-    public String getPoster() {
-        return Poster;
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
-    public void setPoster(String poster) {
-        Poster = poster;
+
+    public String getPictureUrl() {
+        return pictureUrl;
+    }
+
+    public void setPictureUrl(String pictureUrl) {
+        this.pictureUrl = pictureUrl;
     }
 }

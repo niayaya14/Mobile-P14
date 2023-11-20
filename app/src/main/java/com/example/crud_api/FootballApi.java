@@ -4,6 +4,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface FootballApi {
-    @GET("players.json")
+    @GET("data.json")
     Call<PlayerResponse<PlayerItem>> getPlayer();
 }

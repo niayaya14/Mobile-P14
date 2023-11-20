@@ -45,30 +45,30 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_no, tv_name, tv_birth_date, tv_position,
-                tv_international, tv_team;
+        TextView tv_id, tv_album_name, tv_title, tv_release_date,
+                tv_artist_name, tv_genre;
         ImageView posterView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tv_no = itemView.findViewById(R.id.tv_no);
-            tv_name = itemView.findViewById(R.id.tv_name);
-            tv_birth_date = itemView.findViewById(R.id.tv_birth_date);
-            tv_position = itemView.findViewById(R.id.tv_position);
-            tv_international = itemView.findViewById(R.id.tv_international);
-            tv_team = itemView.findViewById(R.id.tv_team);
+            tv_id = itemView.findViewById(R.id.tv_id);
+            tv_album_name = itemView.findViewById(R.id.tv_album_name);
+            tv_title = itemView.findViewById(R.id.tv_title);
+            tv_release_date = itemView.findViewById(R.id.tv_release_date);
+            tv_artist_name = itemView.findViewById(R.id.tv_artist_name);
+            tv_genre = itemView.findViewById(R.id.tv_genre);
             posterView = itemView.findViewById(R.id.posterView);
         }
 
         public void bind(PlayerItem playerItem) {
-            tv_no.setText(playerItem.no);
-            tv_name.setText(playerItem.name);
-            tv_birth_date.setText(playerItem.birth_date);
-            tv_position.setText(playerItem.Position);
-            tv_international.setText(playerItem.International);
-            tv_team.setText(playerItem.Team);
+            tv_id.setText(playerItem.id);
+            tv_album_name.setText(playerItem.albumName);
+            tv_title.setText(playerItem.title);
+            tv_release_date.setText(playerItem.releaseDate);
+            tv_artist_name.setText(playerItem.artistName);
+            tv_genre.setText(playerItem.genre);
 
-            Glide.with(activity).load(playerItem.getPoster()).into(posterView);
+            Glide.with(activity).load(playerItem.getPictureUrl()).into(posterView);
         }
     }
 }
